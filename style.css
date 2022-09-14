@@ -1,0 +1,87 @@
+body,
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: content-box;
+        font-family: Arial;
+    }
+    
+    /* BACKGROUND VIDEO */
+    video {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%; 
+        min-height: 100%;
+    }
+
+    /* CONTAINER FOR EVERYTHING IN FRONT OF THE VIDEO */
+    .overlay {
+        position: fixed;
+        color: #f1f1f1;
+        width: 100%;
+        padding: 20px;
+    }
+    
+    /* BUTTON STYLING */
+    .button-container {
+        text-align: center;
+    }
+    
+    .button-container > button {
+        margin: 0;
+        padding: 10px 18px;
+        color: white;
+        background-color: #008000;
+        border: none;
+        border-radius: 3px;
+        transition: all 200ms ease-in-out;
+        font-size: 14px;
+    }
+    
+    .button-container > button:hover {
+        background-color: #00A000;
+    }
+    
+    .button-container > button:active {
+        background-color: #006000;
+    }
+    
+    /* CONTAINER FOR SELECTED API DATA */
+    .weather-info {
+        position: absolute;
+        width: 0%;
+        display: grid;
+        grid-template-areas:
+            "temp feels-like"
+            "humidity wind";
+        padding: 5%;
+        margin-left: 39%;
+    }
+    
+    /* STYLING THAT THE API DATA SHARE IN COMMON */
+    .weather-info > div {
+        border: thick solid hsla(25,25%, 75%, .5);
+        padding: 24px;
+        width: 59px;
+        height: auto;
+        border-radius: 0px;
+        text-align: center;
+        text-overflow: ellipsis;
+        margin: 0%;
+        position: initial;
+    }
+    
+    /* STYLING THAT'S UNIQUE TO API DATA */
+    .temperature {
+        grid-area: "temp";
+    }
+    .feels-like {
+        grid-area: "feels-like";
+    }
+    .humidity {
+        grid-area: "humidity";
+    }
+    .wind {
+        grid-area: "wind";
+    }
