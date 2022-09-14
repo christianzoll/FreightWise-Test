@@ -21,9 +21,9 @@
          *   ✅ API for Current Weather Data using this API key:  25e989bd41e3e24ce13173d8126e0fd6
          *   ✅ We've already imported this library to get you started.
          * - ✅ Use either async/await or Promises.
-         * - Get the weather for Brentwood, TN, and write it to the DOM using the `setResults` method below.
+         * - ✅ Get the weather for Brentwood, TN, and write it to the DOM using the `setResults` method below.
          *   ✅ Be creative and make it look nice.
-         * - Handle errors and use the `setError` method below to display the error.  Also make it look nice.
+         * - ✅ Handle errors and use the `setError` method below to display the error.  Also make it look nice.
          * - ✅ If you find any mistakes in the test, fix them, and leave a comment about what you fixed and why.
          * - ✅ Make sure your code is readable and maintainable.
          * - ✅ Use plenty of descriptive comments.
